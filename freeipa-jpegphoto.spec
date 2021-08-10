@@ -4,7 +4,7 @@
 %global ipa_python3_sitelib %{python3_sitelib}
 
 Name:           freeipa-%{plugin_name}
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        user avatar integration for FreeIPA
 
@@ -95,5 +95,8 @@ fi
 %{ipa_python3_sitelib}/ipaserver/plugins/*
 
 %changelog
+* Tue Aug 10 2021 Jasper Roloff <jasperroloff@gmail.com> 0.1.1-1
+- 
+
 * Tue Aug 10 2021 Jasper Roloff <jasperroloff@gmail.com> 0.1.0-1
 - Initial release
