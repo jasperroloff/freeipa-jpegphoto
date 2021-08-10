@@ -1,3 +1,5 @@
+// inspired by https://github.com/teicee/freeipa-widget-picture
+
 define(['freeipa/ipa', 'freeipa/phases', 'freeipa/widget', 'freeipa/reg', 'freeipa/text', 'freeipa/user', 'dojo/on', 'exports'], function(IPA, phases, widget, reg, text, user, on, exp) {
     IPA.picture_widget = function (spec) {
         spec = spec || {}
