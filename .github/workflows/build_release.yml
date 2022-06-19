@@ -31,7 +31,7 @@ jobs:
     - name: Test installation of built rpm
       run: dnf install -y noarch/*.rpm
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: rpms
         path: ${{ github.workspace }}/noarch/*.rpm
