@@ -4,8 +4,8 @@
 %global ipa_python3_sitelib %{python3_sitelib}
 
 Name:           freeipa-%{plugin_name}
-Version:        0.1.7
-Release:        2%{?dist}
+Version:        0.1.8
+Release:        1%{?dist}
 Summary:        user avatar integration for FreeIPA
 
 BuildArch:      noarch
@@ -95,6 +95,9 @@ fi
 %{ipa_python3_sitelib}/ipaserver/plugins/*
 
 %changelog
+* Fri Feb 23 2024 Jasper Roloff <jasperroloff@gmail.com> 0.1.8-1
+- add "fedora:36" target (jasperroloff@gmail.com)
+
 * Fri Feb 23 2024 Jasper Roloff <jasperroloff@gmail.com> 0.1.7-2
 - GitHub actions: fix syntax (jasperroloff@gmail.com)
 
