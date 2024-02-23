@@ -11,10 +11,16 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        container: ["fedora:37", "fedora:38", "fedora:39", "rockylinux:9", "rockylinux:9.3"]
     runs-on: ubuntu-latest
-    container: fedora:37
-
+    container: ${{ matrix.container }}
     steps:
+    - name: Enable EPEL (if rockylinux)
+      if: "${{ startsWith(matrix.container, 'rockylinux:') }}"
+      run: dnf install -y epel-release
+
     - name: Install build tools
       run: dnf install -y git tito
 
