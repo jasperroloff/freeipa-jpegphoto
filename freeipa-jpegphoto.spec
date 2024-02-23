@@ -4,7 +4,7 @@
 %global ipa_python3_sitelib %{python3_sitelib}
 
 Name:           freeipa-%{plugin_name}
-Version:        0.1.5
+Version:        0.1.6
 Release:        1%{?dist}
 Summary:        user avatar integration for FreeIPA
 
@@ -95,6 +95,9 @@ fi
 %{ipa_python3_sitelib}/ipaserver/plugins/*
 
 %changelog
+* Fri Feb 23 2024 Jasper Roloff <jasperroloff@gmail.com> 0.1.6-1
+- upgrade fedora to 37 (jasperroloff@gmail.com)
+
 * Fri Feb 23 2024 Jasper Roloff <jasperroloff@gmail.com> 0.1.5-1
 - upgrade fedora to 36 (jasperroloff@gmail.com)
 
