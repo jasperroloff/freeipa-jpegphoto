@@ -13,7 +13,7 @@ jobs:
   build:
     strategy:
       matrix:
-        container: ["fedora:37", "fedora:38", "fedora:39", "rockylinux:9", "rockylinux:9.3"]
+        container: ["fedora:36", "fedora:37", "fedora:38", "fedora:39", "rockylinux:9", "rockylinux:9.3"]
     runs-on: ubuntu-latest
     container: ${{ matrix.container }}
     steps:
