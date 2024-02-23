@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: fedora:36
+    container: fedora:37
 
     steps:
     - name: Install build tools
